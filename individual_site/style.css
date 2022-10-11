@@ -5,7 +5,118 @@ html {
 body {
     padding: 0;
     margin: 0;
+    font-weight: 400;
+    color: #000;
+    min-width: 320px;
 }
-/* content */
+
+/* Nav */
+#navbarText .nav-item:hover {
+    border: 1px solid white;
+    border-radius: 2px;
+}
+/* Nav */
+
+/* Main Content */
+.main-content {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.cards {
+    margin: 0 !important;
+}
+
+/* Carousel */
 .main-carousel {
+    padding: 0;
 }
+
+.main-carousel .carousel-item {
+    height: 70vh;
+}
+
+.main-carousel .carousel-item img {
+    object-fit: fill;
+}
+/* Carousel */
+
+/* Info */
+.info-card {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06);
+    transition: all .3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-thumb img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.info-card:hover {
+    box-shadow: 0 14px 30px -15px rgba(0, 0, 0, 0.75);
+}
+
+.info-card {
+    color: #000;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.info-details {
+}
+
+.info-details h4 a {
+    text-align: center;
+    font-size: 2rem;
+    color: #000;
+    font-weight: 500;
+    display: block;
+    height: 50px;
+    overflow: hidden;
+    text-decoration: none;
+    margin-bottom: 50px;
+}
+
+.info-details {
+    padding: 20px;
+}
+
+.info-details p {
+    /*font-size: 15px;*/
+    /*margin-bottom: 20px;*/
+    /*height: 0px;*/
+    /*overflow: hidden;*/
+}
+
+.row-flex {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.info-bottom-details {
+    overflow: hidden;
+    border-top: 1px solid white;
+    padding-top: 20px;
+}
+
+.info-links a{
+    color: #000;
+}
+
+.info-links a:hover{
+    color: #dbdbdb;
+}
+
+.info-bottom-details .date span {
+    font-weight: 500;
+}
+
+.container {
+    margin: 0;
+}
+/* Info */
+/* Main Content */

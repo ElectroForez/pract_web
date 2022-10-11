@@ -5,31 +5,32 @@
     <title>Венеция</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@200;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda+One&family=Roboto:ital,wght@0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/1655b4a318.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="bootstrap/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">Венеция</a>
+        <a class="navbar-brand fw-bold" href="#">Венеция</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <span class="navbar-text text-light" style="font-family: 'Merienda One', cursive;'">
+                L’essenziale è invisibile agli occhi
+            </span>
+            <ul class="navbar-nav me-1 ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">О городе</a>
+                    <a class="nav-link active" aria-current="page" href="index.html">Главная</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Достопримечательности</a>
+                    <a class="nav-link" href="history.html">История</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Предложить историю</a>
+                    <a class="nav-link" href="share.html">Поделиться воспоминанием</a>
                 </li>
             </ul>
 
@@ -37,21 +38,108 @@
     </div>
 </nav>
 <section class="main-content">
-    <div id="main-carousel" class="carousel slide container-fluid" data-ride="carousel" data-bs-interval="3000">
+    <div class="carousel slide carousel-fade main-carousel" data-bs-ride="carousel" data-bs-interval="3000">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="d-block w-100" src="https://celes.club/uploads/posts/2022-05/thumbs/1653538579_2-celes-club-p-venetsiya-fon-krasivie-2.jpg" alt="Second slide">
+                <img src="img/3.jpg" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="http://oboihd-plus.ucoz.ru/_ph/7/580827710.jpg?1665416427" alt="First slide">
+                <img src="img/2.jpg" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="https://celes.club/uploads/posts/2022-05/1653538519_4-celes-club-p-venetsiya-fon-krasivie-4.jpg" alt="Third slide">
+                <img src="img/1.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+    </div>
+    <div class="bg-dark text-center text-light p-2 fw-bold fs-5">Достопримечательности Венеции</div>
+    <div class="cards container-fluid bg-dark pt-5">
+        <div class="row bg-dark row-flex">
+            <div class="col-lg-6 col-sm-12">
+                <div class="info-card bg-light">
+                    <div class="info-thumb">
+                        <a href="#"><img src="img/Grand-Canal.jpg" alt="" class="rounded-circle"></a>
+                    </div>
+                    <div class="info-details">
+                        <h4><a href="#">Гранд-канал</a></h4>
+                        <p class="fst-italic">Самый большой и красивый канал в городе. Можно сказать, его центральный проспект, длина которого 4 км. При обзоре с прогулочного катера открываются поистине открыточные виды – колоритные особняки, торжественные палаццо, красивые соборы. Да и виды на канал, который проходит через весь город, тоже весьма живописны.</p>
+                        <div class="info-bottom-details d-flex justify-content-between">
+                            <div class="date">
+                                Дата основания:
+                                <span>01.01.1970</span>
+                            </div>
+                            <div class="info-links">
+                                <a href="#"><i class="fa-solid fa-share"></i></a>
+                                <a href="#"><i class="far fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+                <div class="info-card bg-light">
+                    <div class="info-thumb">
+                        <a href="#"><img src="img/St-Mark.jpg" alt="" class="rounded-circle"></a>
+                    </div>
+                    <div class="info-details">
+                        <h4><a href="#">Площадь Святого Марка</a></h4>
+                        <p class="fst-italic">Визитная карточка города, Сан-Марко являет собой одну из главных достопримечательностей Италии. Именно здесь находятся лучшие достопримечательности Венеции и проходят самые культовые мероприятия этого города. А начинается она с двух величественных колонн, на которых расположились статуи апостола Марка и крылатого льва.</p>
+                        <div class="info-bottom-details d-flex justify-content-between">
+                            <div class="date">
+                                Дата основания:
+                                <span>01.01.1970</span>
+                            </div>
+                            <div class="info-links">
+                                <a href="#"><i class="fa-solid fa-share"></i></a>
+                                <a href="#"><i class="far fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+                <div class="info-card bg-light">
+                    <div class="info-thumb">
+                        <a href="#"><img src="img/Grand-Canal.jpg" alt="" class="rounded-circle"></a>
+                    </div>
+                    <div class="info-details">
+                        <h4><a href="#">Гранд-канал</a></h4>
+                        <p class="fst-italic">Самый большой и красивый канал в городе. Можно сказать, его центральный проспект, длина которого 4 км. При обзоре с прогулочного катера открываются поистине открыточные виды – колоритные особняки, торжественные палаццо, красивые соборы. Да и виды на канал, который проходит через весь город, тоже весьма живописны.</p>
+                        <div class="info-bottom-details d-flex justify-content-between">
+                            <div class="date">
+                                Дата основания:
+                                <span>01.01.1970</span>
+                            </div>
+                            <div class="info-links">
+                                <a href="#"><i class="fa-solid fa-share"></i></a>
+                                <a href="#"><i class="far fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+                <div class="info-card bg-light">
+                    <div class="info-thumb">
+                        <a href="#"><img src="img/Grand-Canal.jpg" alt="" class="rounded-circle"></a>
+                    </div>
+                    <div class="info-details">
+                        <h4><a href="#">Гранд-канал</a></h4>
+                        <p class="fst-italic">Самый большой и красивый канал в городе. Можно сказать, его центральный проспект, длина которого 4 км. При обзоре с прогулочного катера открываются поистине открыточные виды – колоритные особняки, торжественные палаццо, красивые соборы. Да и виды на канал, который проходит через весь город, тоже весьма живописны.</p>
+                        <div class="info-bottom-details d-flex justify-content-between">
+                            <div class="date">
+                                Дата основания:
+                                <span>01.01.1970</span>
+                            </div>
+                            <div class="info-links">
+                                <a href="#"><i class="fa-solid fa-share"></i></a>
+                                <a href="#"><i class="far fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </section>
-
-
 </body>
 </html>
