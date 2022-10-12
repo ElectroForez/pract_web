@@ -8,8 +8,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Merienda+One&family=Roboto:ital,wght@0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/1655b4a318.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="history.css">
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -24,10 +25,10 @@
             </span>
       <ul class="navbar-nav me-1 ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="index.html">Главная</a>
+          <a class="nav-link active" aria-current="page" href="index.html">Главная</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="history.html">История</a>
+          <a class="nav-link" href="history.html">История</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="share.html">Поделиться воспоминанием</a>
@@ -38,20 +39,53 @@
   </div>
 </nav>
 <section class="main-content">
-  <div id="main-carousel" class="main-carousel carousel slide container-fluid" data-ride="carousel" data-bs-interval="3000">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img class="d-block w-100" src="img/3.jpg" alt="Second slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="img/2.jpg" alt="First slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="img/1.jpg" alt="Third slide">
+  <div class="history container-fluid bg-dark">
+    <h1>
+      Город Венеция (Италия)
+    </h1>
+    <p>Венеция - один из самых известных городов Италии и центр одноименной области Венето, расположенной в северо-восточной части страны на берегу Адриатического моря. Она входит в список объектов Всемирного наследия ЮНЕСКО, являясь одним из самых уникальных и романтичных мест планеты. Венеция - потрясающий и сказочный город, исторический центр которого построен на 118 островах Венецианской лагуны и представляет собой невероятное сочетание лабиринта улиц-каналов и сотен мостов с изящной архитектурой роскошных дворцов и грандиозных церквей.</p>
+    <p>Венеция - город уникальных туристических аттракционов и мест, особой атмосферы и истории. Здесь можно совершить прогулку на традиционных лодках-гондолах и послушать песни гондольеров, погулять по Сан-Марко, увидеть Дворец Дожей, мост Риальто и яркие домики Бурано. Венеция - это город, который почти не изменился за последние шесть веков. Здесь всё также основным средством передвижения являются лодки, по каналам до сих пор плавают традиционные гондолы, пусть и ставшие лишь туристическим аттракционом, а на улицах нет автомобилей, что является просто невероятным явлением в современном мире.</p>
+    <p>Венеция расположена в акватории Адриатического моря практически на широте Краснодарского края. Исторический центр расположен на множестве островов, разделённых каналами и соединённых мостами, который называют "Sestieri". Он включает районы Каннареджо, Кастелло, Дорсодуро, Сан-Поло, Санта-Кроче и Сан-Марко, где расположены основные памятники и достопримечательности Венеции. Из других островов Венецианской лагуны следует выделить Мурано, Торчелло, Сан-Франческо-дель-Десерто и Бурано. Архитектура Венеции - это особый архитектурный стиль, который называют венецианским. Большинство памятников архитектуры и культуры было построено в период с 12 по 16 века.</p>
+    <p class="hint bg-secondary">Интересно, что большинство исторических зданий Венеции построено на сваях из альпийской лиственницы, которая практически не гниёт в воде.</p>
+    <img src="img/venice-italy-800x444.jpg" alt="">
+    <h6>Венецианский Гранд-Канал</h6>
+  </div>
+  <h1>География и климат</h1>
+</section>
+
+<footer>
+  <section class="footer bg-dark">
+    <div class="container-fluid">
+      <div class="row row-cols-sm-2 row-cols-lg-3">
+        <div class="col">
+          <h4>Информация</h4>
+          <ul class="list-unstyled">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Наши другие сайты</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h4>Контакты</h4>
+          <ul class="list-unstyled">
+            <li><a href="tel:123456740">123 4567-40</a></li>
+            <li><a href="tel:123456751">123 4567-51</a></li>
+            <li><a href="tel:123456762">123 4567-62</a></li>
+            <li><a href="tel:123456773">123 4567-73</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h4>Мы в сети</h4>
+          <ul class="footer-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-telegram"></i></a>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+</footer>
 
 </body>
 </html>
