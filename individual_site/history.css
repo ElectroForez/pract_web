@@ -1,8 +1,10 @@
 .history {
     color: #fff;
+    margin-bottom: 0;
 }
-.history h1 {
-    font-style: italic;
+
+.chapter h1 {
+    font-weight: bold;
     text-align: center;
 }
 
@@ -12,4 +14,21 @@
     width: auto;
     border: 1px solid #fff;
     color: #dbdbdb;
+}
+
+.chapter ul {
+    padding: 40px;
+    background-color: #ffffff;
+    color: #000;
+    max-width: 500px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+.img-block {
+    padding-bottom: 20px;
+}
+
+.img-block h6 {
+    padding-top: 5px;
+    margin-bottom: 0;
 }

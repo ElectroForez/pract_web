@@ -1,0 +1,37 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main-content {
+    flex-grow: 1;
+}
+
+.share {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("img/venice-italy-800x444.jpg");
+}
+.share label {
+    padding: 2px;
+    background-color: #000;
+    border-radius: 5px;
+}
+.share .form-group textarea {
+    height: 97%;
+}
+
+.share form {
+    width: 100%;
+}
+
+.share h1 {
+    text-align: center;
+}
