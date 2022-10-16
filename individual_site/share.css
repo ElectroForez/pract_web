@@ -17,10 +17,10 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url("img/venice-italy-800x444.jpg");
+    background-image: url("img/1416489414_543777_93.jpg");
 }
 .share label {
-    padding: 2px;
+    padding: 5px;
     background-color: #000;
     border-radius: 5px;
 }
